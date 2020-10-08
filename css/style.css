@@ -1,0 +1,260 @@
+                .container {
+                    margin: 2em 0;
+                }
+                /* 
+Extra small devices (portrait phones, less than 544px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+                
+                h1 {
+                    font-size: 1rem;
+                }
+                /*1rem = 16px*/
+                /* Small devices (landscape phones, 544px and up) */
+                
+                @media (min-width: 544px) {
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+                    /*1rem = 16px*/
+                }
+                /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+                
+                @media (min-width: 768px) {
+                    h1 {
+                        font-size: 2rem;
+                    }
+                    /*1rem = 16px*/
+                }
+                /* Large devices (desktops, 992px and up) */
+                
+                @media (min-width: 992px) {
+                    h1 {
+                        font-size: 2.5rem;
+                    }
+                    /*1rem = 16px*/
+                }
+                /* Extra large devices (large desktops, 1200px and up) */
+                
+                @media (min-width: 1200px) {
+                    h1 {
+                        font-size: 3rem;
+                    }
+                    /*1rem = 16px*/
+                }
+                /*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+                /* Set width to make card deck cards 100% width */
+                
+                @media (min-width: 950px) and (max-width:1100px) {
+                    h1 {
+                        font-size: 2.75rem;
+                        color: red;
+                    }
+                }
+                
+                @import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+                * {
+                    box-sizing: border-box;
+                }
+                
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                header,
+                section {
+                    overflow-x: hidden;
+                }
+                
+                 :root {
+                    --Sniglet-font: "Sniglet", cursive;
+                    --Rubik: "Rubik", cursive;
+                    --Patua: "Patua One", cursive;
+                    --Lobster: "lobster", cursive;
+                    --light-black: #2e2c2caf;
+                    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+                    --light-gray: rgba(255, 255, 255, 0.877);
+                }
+                
+                header a {
+                    font-family: var(--Sniglet-font);
+                    font-size: 0.9em;
+                    color: rgb(244, 248, 250);
+                }
+                
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #bda417;
+                    min-width: 160px;
+                    box-shadow: 0px 2px 15px 0px rgba(216, 178, 9, 0);
+                    z-index: 1;
+                }
+                
+                .bg-img {
+                    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(https://image.shutterstock.com/z/stock-photo-fresh-vegetables-and-fruits-background-671214985.jpg) no-repeat center;
+                    background-size: cover;
+                    color: white;
+                    min-height: 40%;
+                    width: 100%;
+                    position: relative;
+                    text-align: center;
+                    animation: 1s fadein forwards;
+                    padding: 10% 0;
+                }
+                
+                .carousel-inner {
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    max-height: 400px;
+                    color: orange;
+                }
+                
+                #ourfarm {
+                    background-color: lightslategrey;
+                }
+                
+                .text {
+                    color: white;
+                    font: bold 22px Helvetica, Arial, Sans-Serif;
+                    text-shadow: 1px 1px #f0ecea, 2px 2px #0a0a09, 3px 3px #fe4902;
+                    -webkit-transition: all 0.12s ease-out;
+                    -moz-transition: all 0.12s ease-out;
+                    -ms-transition: all 0.12s ease-out;
+                    -o-transition: all 0.12s ease-out;
+                    text-align: center;
+                    margin-top: 50px;
+                }
+                
+                html {
+                    box-sizing: border-box;
+                }
+                
+                *,
+                *:before,
+                *:after {
+                    box-sizing: inherit;
+                }
+                
+                .column {
+                    float: left;
+                    width: 33.3%;
+                    margin-bottom: 16px;
+                    padding: 0 8px;
+                }
+                
+                @media screen and (max-width: 650px) {
+                    .column {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                
+                .card {
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                }
+                
+                .container2 {
+                    padding: 0 16px;
+                }
+                
+                .container2::after,
+                .row::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+                
+                .title {
+                    color: grey;
+                }
+                
+                .button {
+                    border: none;
+                    outline: 0;
+                    display: inline-block;
+                    padding: 8px;
+                    color: white;
+                    background-color: #000;
+                    text-align: center;
+                    cursor: pointer;
+                    width: 100%;
+                }
+                
+                .button:hover {
+                    background-color: #555;
+                }
+                /*Contact sectiom*/
+                
+                .content-header {
+                    font-family: 'Oleo Script', cursive;
+                    color: #fcc500;
+                    font-size: 45px;
+                }
+                
+                .section-content {
+                    text-align: center;
+                }
+                
+                #contact {
+                    font-family: 'Teko', sans-serif;
+                    padding-top: 60px;
+                    width: 100%;
+                    width: 100vw;
+                    height: 550px;
+                    background: #3a6186;
+                    /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to left, #3a6186, #89253e);
+                    /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to left, #3a6186, #89253e);
+                    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    color: #fff;
+                }
+                
+                .contact-section {
+                    padding-top: 40px;
+                }
+                
+                .contact-section .col-md-6 {
+                    width: 50%;
+                }
+                
+                .form-line {
+                    border-right: 1px solid #B29999;
+                }
+                
+                .form-group {
+                    margin-top: 10px;
+                }
+                
+                label {
+                    font-size: 1.3em;
+                    line-height: 1em;
+                    font-weight: normal;
+                }
+                
+                .form-control {
+                    font-size: 1.3em;
+                    color: #080808;
+                }
+                
+                textarea.form-control {
+                    height: 135px;
+                    /* margin-top: px;*/
+                }
+                
+                .submit {
+                    font-size: 1.1em;
+                    float: right;
+                    width: 150px;
+                    background-color: transparent;
+                    color: #fff;
+                }
+                
+                .container3 {
+                    background-color: rgb(191, 211, 79);
+                }
